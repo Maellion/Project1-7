@@ -149,5 +149,3 @@ elif waar_opeten == "meenemen":
 else:
     print("Abort, unknown imput")
 
-.
-
