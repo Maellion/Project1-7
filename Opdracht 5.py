@@ -11,3 +11,11 @@ for numbers in range(1, 31):
     else:
         print(numbers)
 
+
+for i in range(1, 10):
+    if i == 5:
+        continue
+    print(i)
+    if i == 7:
+        break
+
