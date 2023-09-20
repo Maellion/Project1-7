@@ -48,7 +48,28 @@ print(bingo_lijst[1])
 print(bingo_lijst[2])
 print(bingo_lijst[3])
 
+print("---------------------------------------------------------------------")
+
+
 # Opdracht 3
+
+bingo = False
+for index in range(lijst_nummer):
+    if sum(bingo_lijst[index]) == 0:
+        bingo = True
+        break
+
+    kolom_totaal = 0
+    for kolom_index in range(lijst_nummer):
+        kolom_totaal += bingo_lijst[kolom_index][index]
+    if kolom_totaal == 0:
+        bingo = True
+        break
+
+if bingo:
+    print("BINGO!")
+else:
+    print("Geen bingo, volgende keer beter")
 
 
 
